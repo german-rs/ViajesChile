@@ -4,3 +4,41 @@
     Jornada: Vespertina.   
     Desafío: Viajes Chile. 
 */
+
+/* Configuraciones generales. */
+body *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Lexend Deca",sans-serif;
+    font-weight: 300;
+}
+
+.titulo-h1{
+    font-family: "Nunito", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.titulo-h2{
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+/* Fin configuraciones generales. */
+
+
+/* Barra de navegación. */
+.navbar-brand img{
+    width: 50px;
+    height: auto;
+}
+
+.navbar-brand{
+   font-family: "Nunito", sans-serif;
+   font-weight: 600;
+}
+
+/* Fin barra de navegación. */
