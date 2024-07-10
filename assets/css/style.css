@@ -9,6 +9,7 @@
 body *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body{
@@ -59,6 +60,12 @@ body{
    font-weight: 600;
 }
 /* Fin barra de navegación. */
+
+/* Carousel. */
+#carouselExampleControls{
+    width: 100%;
+}
+/* Fin carousel. */
 
 
 
