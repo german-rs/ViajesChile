@@ -65,13 +65,14 @@ html{
 }
 
 .navbar-transparente{
-    background-color: rgba(255, 255, 255, 0.4); /* Color blanco con 50% de transparencia */
-    transition: background-color 0.5s ease; /* Transición suave */
+    background-color: rgba(255, 255, 255, 0.4); /* Color blanco con 40% de transparencia */
+    transition: background-color 0.5s ease; 
 }
 
 .navlink-cambio-color{
     color: var(--darkprimary);
     font-weight: 600;
+    transition: font-weight 0.5s ease-in; 
 }
 
 /* Fin barra de navegación. */
@@ -84,7 +85,7 @@ html{
 
 /* Quienes somos. */
 .info-somos{
-    width: 22rem;
+    width: 25rem;
     height: auto;
 } 
 
@@ -92,6 +93,14 @@ html{
     background-color: var(--primary-color);
 }
 /* Fin quienes somos. */
+
+
+/* Destacados. */
+.card-body{
+    background: var(--darkprimary);
+}
+/* Fin destacados. */
+
 
 
 /* Contacto. */
@@ -106,6 +115,18 @@ footer{
     width: 100%;
     height: auto;
     background-color: var(--primary-color);
+   
+}
+
+.envoltorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .pie_pg{
+    width: 200px;
 }
 /* Fin footer. */
 
