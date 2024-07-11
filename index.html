@@ -71,6 +71,7 @@
     <!-- Barra de navegación. -->
 
 
+
     <!-- Sección héroe. -->
     <header>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -100,23 +101,35 @@
     </header>
     <!-- Fin Sección héroe. -->
 
-
     <!-- Quienes somos. -->
-    <section id="quienes-somos">
-        <h2 class="titulo-h2">Quienes somos</h2>
+    <section id="quienes-somos" class="row justify-content-between contenedor">
+        <h2 class="titulo-h2 text-center">Quienes somos</h2>
+
+        <div class="info-somos">
+            <div class="div-icon text-center"><i class="fa-solid fa-plane"></i></div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas, ullam quae aliquid hic magni expedita sed corrupti ipsam tenetur quaerat culpa. Rem incidunt esse harum eligendi, doloremque pariatur dignissimos.</div>
+        </div>
+        <div class="info-somos">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas, ullam quae aliquid hic magni expedita sed corrupti ipsam tenetur quaerat culpa. Rem incidunt esse harum eligendi, doloremque pariatur dignissimos.</div>
+            <div class="div-icon text-center"><i class="fa-solid fa-mountain"></i></div>
+        </div>
+        <div class="info-somos">
+            <div class="div-icon text-center"><i class="fa-solid fa-route"></i></div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas, ullam quae aliquid hic magni expedita sed corrupti ipsam tenetur quaerat culpa. Rem incidunt esse harum eligendi, doloremque pariatur dignissimos.</div>
+        </div>
 
     </section>
     <!-- Fin Quienes somos. -->
 
 
     <!-- Destacados. -->
-    <section id="destacados">
+    <section id="destacados" class="contenedor">
         <article class="row">
-            <h2 class="titulo-h2">Destacados</h2>
+            <h2 class="titulo-h2 text-center">Destacados</h2>
 
             <!-- Tarjeta 1. -->
             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 17rem;">
                     <img class="card-img-top" src="./assets/img/card1.jpg"
                         alt="Panqueques con majar y frutillas sobre un plato de borde celeste">
                     <div class="card-body">
@@ -133,7 +146,7 @@
 
             <!-- Tarjeta 2. -->
             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 17rem;">
                     <img class="card-img-top" src="./assets/img/card2.jpg"
                         alt="Panqueques con majar y frutillas sobre un plato de borde celeste">
                     <div class="card-body">
@@ -148,9 +161,9 @@
                 </div>
             </div>
 
-             <!-- Tarjeta 3. -->
-             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
-                <div class="card" style="width: 18rem;">
+            <!-- Tarjeta 3. -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
+                <div class="card" style="width: 17rem;">
                     <img class="card-img-top" src="./assets/img/card3.jpg"
                         alt="Panqueques con majar y frutillas sobre un plato de borde celeste">
                     <div class="card-body">
@@ -165,9 +178,9 @@
                 </div>
             </div>
 
-             <!-- Tarjeta 4. -->
-             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
-                <div class="card" style="width: 18rem;">
+            <!-- Tarjeta 4. -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
+                <div class="card" style="width: 17rem;">
                     <img class="card-img-top" src="./assets/img/card4.jpg"
                         alt="Panqueques con majar y frutillas sobre un plato de borde celeste">
                     <div class="card-body">
@@ -182,7 +195,7 @@
                 </div>
             </div>
 
-           
+
 
         </article>
 
@@ -191,15 +204,32 @@
 
 
     <!-- Contacto. -->
-    <section id="contacto">
-        <h2 class="titulo-h2">Contacto</h2>
+    <section id="contacto" class="contenedor">
+        <h2 class="titulo-h2 text-center">Contacto</h2>
+
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputText" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputText" aria-describedby="textHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputText" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="exampleInputText" aria-describedby="textlHelp">
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+
     </section>
     <!-- Fin Contacto. -->
 
 
     <!-- Footer. -->
     <footer>
-        <div class="row justify-content-between">
+        <div class="row justify-content-arround">
             <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
                 <p>Viajes Chile</p>
             </div>

@@ -1,8 +1,8 @@
-/* 
+/*
     Nombre estudiante: Germán A. Riveros Sepúlveda.
     Generación: 14.
-    Jornada: Vespertina.   
-    Desafío: Viajes Chile. 
+    Jornada: Vespertina.
+    Desafío: Viajes Chile.
 */
 
 /* Configuraciones generales. */
@@ -17,6 +17,10 @@ body{
     font-weight: 300;
     background: var(--black);
     color: var(--primary-text);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* Colores. */
@@ -47,7 +51,7 @@ body{
 
 /* Barra de navegación. */
 .navbar{
-    background: var(--primary-color);   
+    background: var(--primary-color);
 }
 
 .navbar-brand img{
@@ -67,6 +71,17 @@ body{
 }
 /* Fin carousel. */
 
+/* Quienes somos. */
+.info-somos{
+    width: 22rem;
+    height: auto;
+} 
+
+.div-icon{
+    background-color: var(--primary-color);
+}
+/* Fin quienes somos. */
+
 
 
 /* Footer. */
@@ -76,3 +91,56 @@ footer{
     background-color: var(--primary-color);
 }
 /* Fin footer. */
+
+.contenedor {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+
+/* xs */
+@media (min-width: 475px) {
+    .contenedor {
+        max-width: 475px;
+      }
+}
+
+/* sm. */
+@media (min-width: 640px) {
+    .contenedor {
+        max-width: 640px;
+      }
+}
+
+/* md. */
+@media (min-width: 768px) {
+    .contenedor {
+        max-width: 768px;
+      }
+}
+
+/* lg. */
+@media (min-width: 1024px) {
+    .contenedor {
+        max-width: 1024px;
+      }
+}
+
+/* xl. */
+@media (min-width: 1280px) {
+    .contenedor {
+        max-width: 1280px;
+      }
+}
+
+/* 2xl. */
+@media (min-width: 1536px) {
+    .contenedor {
+        max-width: 1536px;
+      }
+}
+
+
