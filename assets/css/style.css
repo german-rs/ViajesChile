@@ -6,25 +6,25 @@
 */
 
 /* Configuraciones generales. */
-body *{
+body * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body{
-    font-family: "Lexend Deca",sans-serif;
+body {
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 300;
-    background: var(--black);
+    background: linear-gradient(to right, #30c5d2, #471069);
     color: var(--primary-text);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* Colores. */
-:root{
+:root {
     --black: #212121;
     --primary-text: #fafafa;
     --secondary-text: #EEEEEE;
@@ -35,99 +35,202 @@ html{
     --lightprimary: #B2EBF2;
 }
 
-.titulo-h1{
+.titulo-h1 {
     font-family: "Nunito", sans-serif;
     font-size: 50px;
     font-weight: 700;
 }
 
-.titulo-h2{
+.titulo-h2 {
     font-family: "Nunito", sans-serif;
     font-size: 30px;
     font-weight: 500;
 }
+
 /* Fin configuraciones generales. */
 
 
 /* Barra de navegación. */
-.navbar{
-    background: var(--primary-color);
+.navbar {
+    background: rgba(255, 255, 255, 0.23);
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 50px;
     height: auto;
 }
 
-.navbar-brand{
-   font-family: "Nunito", sans-serif;
-   font-weight: 600;
-}
-
-.navbar-transparente{
-    background-color: rgba(255, 255, 255, 0.4); /* Color blanco con 40% de transparencia */
-    transition: background-color 0.5s ease; 
-}
-
-.navlink-cambio-color{
-    color: var(--darkprimary);
+.navbar-brand {
+    font-family: "Nunito", sans-serif;
     font-weight: 600;
-    transition: font-weight 0.5s ease-in; 
 }
 
+.navbar-transparente {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Color blanco con 40% de transparencia */
+    transition: background-color 0.5s ease;
+}
+
+.navlink-cambio-color {
+    color: var(--primary-text);
+    font-weight: 800;
+    transition: font-weight 0.5s ease-in;
+}
 /* Fin barra de navegación. */
 
+
+/* Sección de héroe. */
+@keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.2); /* Escala inicial */
+    }
+    to {
+      opacity: 1;
+      transform: scale(1); /* Escala final */
+    }
+  }
+
+header h1 {
+    opacity: 0; /* Empieza invisible */
+    animation: fadeInScale 2s ease-in forwards; /* Aplica la animación fadeIn con escala */
+  }
+/* Sección de héroe. */
+
+
 /* Carousel. */
-#carouselExampleControls{
+#carouselExampleControls {
     width: 100%;
 }
+
+.glassmorphism-carousel{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .carousel-item img {
+    border-radius: 15px;
+  }
+
+  .mt-custom {
+    margin-top: 8rem;
+  }
+
 /* Fin carousel. */
 
 /* Quienes somos. */
-.info-somos{
+.info-somos {
     width: 26rem;
     height: auto;
-} 
 
-.div-icon{
-    background-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    border: 1px solid rgba(255, 255, 255, 0.44);
+
 }
+
+.div-icon {
+    width: 100%;
+    
+    border-radius: 16px;
+}
+
+
 /* Fin quienes somos. */
 
 
 /* Destacados. */
-.card-body{
-    background: var(--darkprimary);
+.card{
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 /* Fin destacados. */
 
 
 
 /* Contacto. */
-#contacto form button{
-    background: var(--primary-color);
+.formulario{
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    border: 1px solid rgba(255, 255, 255, 0.44);
 }
+
+#contacto form button {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contacto form button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+} */
+
+.formulario input, textarea{
+    backdrop-filter: blur(10px);
+    background: rgba(200, 200, 200, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  .form-control {
+    tex: blue; /* Cambia este color según tu preferencia */
+  }
+
 /* Fin contacto. */
 
 
 /* Footer. */
-footer{
+footer {
     width: 100%;
     height: auto;
-    background-color: var(--primary-color);
-   
+    /* background-color: rgba(71, 16, 105, 0.1);
+    backdrop-filter: blur(10px); */
+
+    background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px); /* Safari support */
+      border-radius: 15px;
+      padding: 20px;
+      color: #fff;
 }
 
-.envoltorio{
+.envoltorio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-footer .pie_pg{
+footer .pie_pg {
     width: 200px;
 }
+
 /* Fin footer. */
 
 .contenedor {
@@ -136,11 +239,11 @@ footer .pie_pg{
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
+}
 
 
 @media (max-width: 800px) {
-    #quienes-somos{
+    #quienes-somos {
         display: none;
     }
 
@@ -151,7 +254,7 @@ footer .pie_pg{
 @media (min-width: 475px) {
     .contenedor {
         max-width: 475px;
-      }
+    }
 
 }
 
@@ -159,7 +262,7 @@ footer .pie_pg{
 @media (min-width: 640px) {
     .contenedor {
         max-width: 640px;
-      }
+    }
 
 }
 
@@ -167,28 +270,26 @@ footer .pie_pg{
 @media (min-width: 768px) {
     .contenedor {
         max-width: 768px;
-      }
+    }
 }
 
 /* lg. */
 @media (min-width: 1024px) {
     .contenedor {
         max-width: 1024px;
-      }
+    }
 }
 
 /* xl. */
 @media (min-width: 1280px) {
     .contenedor {
         max-width: 1280px;
-      }
+    }
 }
 
 /* 2xl. */
 @media (min-width: 1536px) {
     .contenedor {
         max-width: 1536px;
-      }
+    }
 }
-
-

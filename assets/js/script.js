@@ -31,7 +31,13 @@ $(document).ready(function () {
         }
     });
 
+
+
     //Tooltip.
     $('[data-bs-toggle="tooltip"]').tooltip();
 
 });
+
+
+
+
