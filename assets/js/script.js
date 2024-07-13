@@ -9,7 +9,7 @@
 $(document).ready(function () {
 
     //Tooltip.
-    $('[data-bs-toggle="tooltip"]').tooltip();
+    $('[data-bs-toggle="tooltip"]').tooltip();    
 
 
     // Smooth scroll (Movimiento).
@@ -35,6 +35,20 @@ $(document).ready(function () {
         }
     });
 
+
+    //Texto quienes somos.
+    $(".fav1").on('click', function () {
+        $('.texto1').toggle('slow');
+    });
+
+    $(".fav2").on('click', function () {
+        $('.texto2').toggle('slow');
+    });
+
+    $(".fav3").on('click', function () {
+        $('.texto3').toggle('slow');
+    });
+    
 
 });
 
