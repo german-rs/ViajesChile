@@ -3,10 +3,14 @@
     Generación: 14.
     Jornada: Vespertina.   
     Desafío: Viajes Chile. 
+    Enlace del proyecto: https://german-rs.github.io/ViajesChile/
 */
 
-
 $(document).ready(function () {
+
+    //Tooltip.
+    $('[data-bs-toggle="tooltip"]').tooltip();
+
 
     // Smooth scroll (Movimiento).
     $(".nav-link").on('click', function (event) {
@@ -31,10 +35,6 @@ $(document).ready(function () {
         }
     });
 
-
-
-    //Tooltip.
-    $('[data-bs-toggle="tooltip"]').tooltip();
 
 });
 

@@ -3,6 +3,7 @@
     Generación: 14.
     Jornada: Vespertina.
     Desafío: Viajes Chile.
+    Enlace del proyecto: https://german-rs.github.io/ViajesChile/
 */
 
 /* Configuraciones generales. */
@@ -29,7 +30,6 @@ html {
     --primary-text: #fafafa;
     --secondary-text: #EEEEEE;
     --accent-color: #FF5722;
-    /* --primary-color: #00bcd4; */
     --primary-color: #2c9ca7;
     --darkprimary: #0097A7;
     --lightprimary: #B2EBF2;
@@ -51,8 +51,12 @@ html {
 
 
 /* Barra de navegación. */
-.navbar {
-    background: rgba(255, 255, 255, 0.23);
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .navbar-brand img {
@@ -67,7 +71,6 @@ html {
 
 .navbar-transparente {
     background-color: rgba(255, 255, 255, 0.4);
-    /* Color blanco con 40% de transparencia */
     transition: background-color 0.5s ease;
 }
 
@@ -80,21 +83,24 @@ html {
 
 
 /* Sección de héroe. */
+
+/* Animación h1. */
 @keyframes fadeInScale {
     from {
-      opacity: 0;
-      transform: scale(0.2); /* Escala inicial */
+        opacity: 0;
+        transform: scale(0.2);
     }
+
     to {
-      opacity: 1;
-      transform: scale(1); /* Escala final */
+        opacity: 1;
+        transform: scale(1);
     }
-  }
+}
 
 header h1 {
-    opacity: 0; /* Empieza invisible */
-    animation: fadeInScale 2s ease-in forwards; /* Aplica la animación fadeIn con escala */
-  }
+    opacity: 0;
+    animation: fadeInScale 2s ease-in forwards;
+}
 /* Sección de héroe. */
 
 
@@ -103,25 +109,44 @@ header h1 {
     width: 100%;
 }
 
-.glassmorphism-carousel{
+.glassmorphism-carousel {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 20px;
-  }
+}
 
-  .carousel-item img {
+.carousel-item img {
     border-radius: 15px;
-  }
+}
 
-  .mt-custom {
+.mt-custom {
     margin-top: 8rem;
-  }
+}
 
+/* Animación Carrusel. */
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(0);
+    }
+}
+
+.show {
+    animation: slideUpFadeIn 2s ease-in forwards;
+}
 /* Fin carousel. */
+
 
 /* Quienes somos. */
 .info-somos {
@@ -134,33 +159,34 @@ header h1 {
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
     border: 1px solid rgba(255, 255, 255, 0.44);
-
 }
 
 .div-icon {
     width: 100%;
-    
     border-radius: 16px;
 }
-
-
 /* Fin quienes somos. */
 
 
 /* Destacados. */
-.card{
+.card {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.rounded-top-img {
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+
 /* Fin destacados. */
 
 
-
 /* Contacto. */
-.formulario{
+.formulario {
     background: rgba(255, 255, 255, 0.23);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -184,22 +210,18 @@ header h1 {
 #contacto form button:hover {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-} */
+}
 
-.formulario input, textarea{
+.formulario .form-control {
     backdrop-filter: blur(10px);
-    background: rgba(200, 200, 200, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
     padding: 10px 20px;
     color: #fff;
-  }
-
-  .form-control {
-    color: blue; /* Cambia este color según tu preferencia */
-  }
-
+}
 /* Fin contacto. */
 
 
@@ -207,17 +229,15 @@ header h1 {
 footer {
     width: 100%;
     height: auto;
-    /* background-color: rgba(71, 16, 105, 0.1);
-    backdrop-filter: blur(10px); */
 
     background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px); /* Safari support */
-      border-radius: 15px;
-      padding: 20px;
-      color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
 }
 
 .envoltorio {
@@ -227,12 +247,19 @@ footer {
     flex-wrap: wrap;
 }
 
+footer img{
+    width: 50px;
+    height: auto;
+}
+
 footer .pie_pg {
-    width: 200px;
+    width: 250px;
 }
 
 /* Fin footer. */
 
+
+/* Contenedor principal. */
 .contenedor {
     width: 100%;
     margin-left: auto;
@@ -241,21 +268,23 @@ footer .pie_pg {
     padding-right: 0.5rem;
 }
 
-
 @media (max-width: 800px) {
     #quienes-somos {
         display: none;
     }
-
+    .envoltorio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
-
 
 /* xs */
 @media (min-width: 475px) {
     .contenedor {
         max-width: 475px;
     }
-
 }
 
 /* sm. */
@@ -263,7 +292,6 @@ footer .pie_pg {
     .contenedor {
         max-width: 640px;
     }
-
 }
 
 /* md. */

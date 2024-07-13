@@ -42,7 +42,7 @@
 
 <body>
     <!-- Barra de navegación. -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo-blanco.png" alt="logo Viajes Chile"> Viajes Chile
@@ -76,7 +76,7 @@
     <!-- Sección héroe. -->
     <header>
         <h1 class="titulo-h1 mt-custom text-center mb-5">Descubre la aventura de viajar</h1>
-        <div id="carouselExampleControls" class="carousel slide glassmorphism-carousel" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide glassmorphism-carousel show" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./assets/img/carousel1.jpg" class="d-block w-100"
@@ -166,7 +166,7 @@
             <!-- Tarjeta 1. -->
             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
                 <div class="card text-light" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/img/card1.jpg"
+                    <img class="card-img-top rounded-top-img" src="./assets/img/card1.jpg"
                         alt="Paisaje de un lago entre las montañas">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold p-1">Lorem ipsum dolor sit amet</h5>
@@ -181,7 +181,7 @@
             <!-- Tarjeta 2. -->
             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
                 <div class="card text-light" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/img/card2.jpg"
+                    <img class="card-img-top rounded-top-img" src="./assets/img/card2.jpg"
                         alt="Paisaje altiplanico con montañas y el color del cielo se refleja en el lago">
                     <div class="card-body">
                         <h5 class="card-title text-start fw-bold p-1 text-center">Lorem ipsum dolor sit amet</h5>
@@ -196,7 +196,7 @@
             <!-- Tarjeta 3. -->
             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
                 <div class="card text-light" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/img/card3.jpg"
+                    <img class="card-img-top rounded-top-img" src="./assets/img/card3.jpg"
                         alt="Paisaje con la vista de un río una ave.">
                     <div class="card-body">
                         <h5 class="card-title text-start fw-bold p-1 text-center">Lorem ipsum dolor sit amet</h5>
@@ -211,7 +211,7 @@
             <!-- Tarjeta 4. -->
             <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center my-4">
                 <div class="card text-light" style="width: 17rem;">
-                    <img class="card-img-top" src="./assets/img/card4.jpg"
+                    <img class="card-img-top rounded-top-img" src="./assets/img/card4.jpg"
                         alt="Paisaje de un bosque frondoso">
                     <div class="card-body">
                         <h5 class="card-title text-start fw-bold p-1 text-center">Lorem ipsum dolor sit amet</h5>
@@ -257,10 +257,11 @@
     <footer>
         <div class="envoltorio contenedor">
             <div class="pie_pg col-12 col-md-6 col-lg-6 my-5">
-                <p class="titulo-h2">VIAJES CHILE</p>
+                <p class="titulo-h2"><img src="./assets/img/logo-blanco.png" alt="logo">
+                    Viajes Chile</p>
             </div>
-            <div class="pie_pg col-12 col-md-6 col-lg-6 my-5" data-bs-toggle="tooltip" data-bs-placement="left"
-                title="Síguenos">
+            <div class="pie_pg col-12 col-md-6 col-lg-6 my-5" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" title="Síguenos">
                 <i class="fa-brands fa-github fa-2x p-1"></i>
                 <i class="fa-brands fa-linkedin fa-2x p-1"></i>
                 <i class="fa-brands fa-x-twitter fa-2x p-1"></i>
