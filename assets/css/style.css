@@ -197,7 +197,7 @@ header h1 {
   }
 
   .form-control {
-    tex: blue; /* Cambia este color según tu preferencia */
+    color: blue; /* Cambia este color según tu preferencia */
   }
 
 /* Fin contacto. */
