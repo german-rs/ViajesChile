@@ -55,7 +55,8 @@ html {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -79,6 +80,7 @@ html {
     font-weight: 800;
     transition: font-weight 0.5s ease-in;
 }
+
 /* Fin barra de navegación. */
 
 
@@ -101,6 +103,7 @@ header h1 {
     opacity: 0;
     animation: fadeInScale 2s ease-in forwards;
 }
+
 /* Sección de héroe. */
 
 
@@ -145,26 +148,32 @@ header h1 {
 .show {
     animation: slideUpFadeIn 2s ease-in forwards;
 }
+
 /* Fin carousel. */
 
 
 /* Quienes somos. */
+.hover-trigger {
+    cursor: pointer;
+}
+
 .info-somos {
     width: 26rem;
     height: auto;
-
     background: rgba(255, 255, 255, 0.23);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
     border: 1px solid rgba(255, 255, 255, 0.44);
+    transition: transform 1s ease-in;
 }
 
 .div-icon {
     width: 100%;
     border-radius: 16px;
 }
+
 /* Fin quienes somos. */
 
 
@@ -178,13 +187,12 @@ header h1 {
 }
 
 .rounded-top-img {
-    border-top-left-radius: 15px; 
-    border-top-right-radius: 15px; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-
 .scale-card {
-    transition: transform 1s ease; 
+    transition: transform 1s ease;
 }
 
 .scale-card:hover {
@@ -222,7 +230,9 @@ header h1 {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-.formulario .form-control, #liveToast, .toast-header {
+.formulario .form-control,
+#liveToast,
+.toast-header {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -231,6 +241,11 @@ header h1 {
     padding: 10px 20px;
     color: #fff;
 }
+
+.toast-header {
+    border-radius: 15px;
+}
+
 
 /* Fin contacto. */
 
@@ -257,7 +272,7 @@ footer {
     flex-wrap: wrap;
 }
 
-footer img{
+footer img {
     width: 50px;
     height: auto;
 }
@@ -282,6 +297,7 @@ footer .pie_pg {
     #quienes-somos {
         display: none;
     }
+
     .envoltorio {
         display: flex;
         flex-direction: row;

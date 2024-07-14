@@ -7,14 +7,14 @@
     Enlace del proyecto: https://german-rs.github.io/ViajesChile/
 */
 
-const toastTrigger = document.getElementById('liveToastBtn')
-const toastLiveExample = document.getElementById('liveToast')
+const toastTrigger = document.getElementById('liveToastBtn');
+const toastLiveExample = document.getElementById('liveToast');
 if (toastTrigger) {
-  toastTrigger.addEventListener('click', () => {
-    const toast = new bootstrap.Toast(toastLiveExample)
+    toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
 
-    toast.show()
-  })
+        toast.show()
+    })
 }
 
 $(document).ready(function () {
@@ -54,6 +54,25 @@ $(document).ready(function () {
     $(".fav3").on('click', function () {
         $('.texto3').toggle('slow');
     });
+
+
+    $('.hover-trigger').hover(
+        function() {
+            //En hover.
+            $('#box1').css('transform', 'translateX(-50px)'); 
+            $('#box2').css('transform', 'translateY(50px)');  
+            $('#box3').css('transform', 'translateX(50px)');  
+        },
+        function() {
+            //Sin hover.
+            $('#box1').css('transform', 'translateX(0)'); 
+            $('#box2').css('transform', 'translateY(0)'); 
+            $('#box3').css('transform', 'translateX(0)'); 
+        }
+    );
+
+
+
 
 });
 
