@@ -1,3 +1,4 @@
+
 /* 
     Nombre estudiante: Germán A. Riveros Sepúlveda.
     Generación: 14.
@@ -8,9 +9,7 @@
 
 $(document).ready(function () {
 
-    //Tooltip.
-    $('[data-bs-toggle="tooltip"]').tooltip();    
-
+ 
 
     // Smooth scroll (Movimiento).
     $(".nav-link").on('click', function (event) {
@@ -35,7 +34,6 @@ $(document).ready(function () {
         }
     });
 
-
     //Texto quienes somos.
     $(".fav1").on('click', function () {
         $('.texto1').toggle('slow');
@@ -48,7 +46,6 @@ $(document).ready(function () {
     $(".fav3").on('click', function () {
         $('.texto3').toggle('slow');
     });
-    
 
 });
 
