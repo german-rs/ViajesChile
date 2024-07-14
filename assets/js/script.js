@@ -7,9 +7,17 @@
     Enlace del proyecto: https://german-rs.github.io/ViajesChile/
 */
 
-$(document).ready(function () {
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', () => {
+    const toast = new bootstrap.Toast(toastLiveExample)
 
- 
+    toast.show()
+  })
+}
+
+$(document).ready(function () {
 
     // Smooth scroll (Movimiento).
     $(".nav-link").on('click', function (event) {

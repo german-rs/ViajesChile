@@ -222,16 +222,16 @@ header h1 {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-.formulario .form-control {
+.formulario .form-control, #liveToast, .toast-header {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
     padding: 10px 20px;
     color: #fff;
 }
+
 /* Fin contacto. */
 
 
