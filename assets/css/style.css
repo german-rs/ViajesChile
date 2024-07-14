@@ -93,8 +93,6 @@ html {
     border-color: rgba(255, 255, 255, 0.2) transparent transparent transparent;
     backdrop-filter: blur(10px);
 }
-
-
 /* Fin configuraciones generales. */
 
 
@@ -193,8 +191,8 @@ header h1 {
     }
 }
 
-.show {
-    animation: slideUpFadeIn 2s ease-in forwards;
+.aparecer {
+    animation: slideUpFadeIn 2s ease-in-out forwards;
 }
 
 /* Fin carousel. */

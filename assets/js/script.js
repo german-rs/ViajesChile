@@ -95,8 +95,6 @@ $(document).ready(function () {
         $("form").effect("shake", { times: 3 }, "slow");
     });
     //Fin sección contacto.
-
-
 });
 
 
