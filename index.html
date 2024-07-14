@@ -106,7 +106,7 @@
 
     <!-- Quienes somos. -->
     <section id="quienes-somos" class="row justify-content-center contenedor my-5">
-        <h2 class="titulo-h2 text-center my-5 hover-trigger">Quiénes somos</h2>
+        <h2 class="titulo-h2 text-center my-5 hover-trigger msj">Quiénes somos <span class="msjtext">¡Cursor aquí!</span></h2>
 
         <div class="info-somos col-12 col-md-auto my-3" id="box1">
             <div class="div-icon text-center"><i class="fav1 fa-solid fa-plane fa-2x my-3"></i></div>
@@ -162,10 +162,9 @@
     <!-- Destacados. -->
     <section id="destacados" class="contenedor my-5">
         <article class="row">
-            <h2 class="titulo-h2 text-center my-5">Destacados</h2>
-
+            <h2 class="titulo-h2 text-center my-5 msj" id="tit-destacados">Destacados<span class="msjtext">¡Haz click aquí!</span></h2>
             <!-- Tarjeta 1. -->
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card">
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card tarjeta">
                 <div class="card text-light" style="width: 18rem;">
                     <img class="card-img-top rounded-top-img" src="./assets/img/card1.jpg"
                         alt="Paisaje de un lago entre las montañas">
@@ -180,7 +179,7 @@
             </div>
 
             <!-- Tarjeta 2. -->
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card my-4">
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card my-4 tarjeta">
                 <div class="card text-light" style="width: 18rem;">
                     <img class="card-img-top rounded-top-img" src="./assets/img/card2.jpg"
                         alt="Paisaje altiplanico con montañas y el color del cielo se refleja en el lago">
@@ -195,7 +194,7 @@
             </div>
 
             <!-- Tarjeta 3. -->
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card my-4">
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card my-4 tarjeta">
                 <div class="card text-light" style="width: 18rem;">
                     <img class="card-img-top rounded-top-img" src="./assets/img/card3.jpg"
                         alt="Paisaje con la vista de un río una ave.">
@@ -210,7 +209,7 @@
             </div>
 
             <!-- Tarjeta 4. -->
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card my-4">
+            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center scale-card my-4 tarjeta">
                 <div class="card text-light" style="width: 17rem;">
                     <img class="card-img-top rounded-top-img" src="./assets/img/card4.jpg"
                         alt="Paisaje de un bosque frondoso">
@@ -231,7 +230,9 @@
 
     <!-- Contacto. -->
     <section id="contacto" class="contenedor my-5">
-        <h2 class="titulo-h2 text-center my-5">Contacto</h2>
+        <div class="row">
+            <h2 class="titulo-h2 text-center my-5 msj" id="tit-contacto">Contacto<span class="msjtext">¡Haz click aquí!</span></h2>
+        </div>
         <form class="formulario p-4">
             <div class="mb-3">
                 <label for="exampleInputText" class="form-label">Nombre</label>
@@ -274,7 +275,8 @@
                 <p class="titulo-h2"><img src="./assets/img/logo-blanco.png" alt="logo">
                     Viajes Chile</p>
             </div>
-            <div class="pie_pg col-12 col-md-6 col-lg-6 my-5">
+            <div class="pie_pg col-12 col-md-6 col-lg-6 my-5 msj">
+                <span class="msjtext" style="font-size: 0.8em;">¡Síguenos!</span>
                 <i class="fa-brands fa-github fa-2x p-1"></i>
                 <i class="fa-brands fa-linkedin fa-2x p-1"></i>
                 <i class="fa-brands fa-x-twitter fa-2x p-1"></i>
@@ -287,9 +289,11 @@
 
     <!-- JQuery. -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
     <!-- Popper.  -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
     <!-- bootstrap. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
