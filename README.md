@@ -1,12 +1,4 @@
-<style>
-    .custom-background {
-        background: linear-gradient(to right, #30c5d2, #471069);
-        padding: 20px;
-        color: #fff;
-    }
-</style>
-
-<div class="custom-background">
+<div class="custom-background" style="background-color: lightblue; padding: 20px;">
 
 # Viajes Chile ![Logo](./assets/img/logomd.png)
 ## Descubre la aventura de viajar
