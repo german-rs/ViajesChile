@@ -8,13 +8,15 @@ Enlace del proyecto -> [Aquí](https://german-rs.github.io/ViajesChile/)
 
 ![maqueta](./assets/img/maqueta.jpg)
 
-<p>Hace unos meses conocí el "Glass Morphism" como tendencia en el desarrollo de productos digitales y como en este trabajo se solicitaba un diseño tractivo e innovador quice aplicar ese estilo para esta landing.</p>
+<p>Hace unos meses conocí el "Glass Morphism" cómo tendencia en el desarrollo de productos digitales y cómo en este trabajo se solicitaba un diseño atractivo e innovador quise aplicar ese estilo para esta landing.</p>
 
 El resultado final de este trabajo lo puedes ver en el siguiente [enlace.](https://german-rs.github.io/ViajesChile/)
 
-Para este trabajo se utilizó:
+Para este proyecto se utilizó:
 <ul>
 <li>HTML5</li>
+<li>CSS</li>
+<li>JavaScript</li>
 <li>Bootstrap</li>
 <li>JQuery</li>
 <li>Google Fonts</li>
